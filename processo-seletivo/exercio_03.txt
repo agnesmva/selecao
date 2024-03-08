@@ -1,0 +1,6 @@
+a) 13, sequência de números primos;
+b) 128, soma do mesmo número;
+c) 49, sequencia de 0,1,2,3,4,5,6,7 sendo 7*7==49;
+d) 100, sequencia de 2,4,6,8,10 sendo 10*10==100;
+e) 13, sequencia de fibonacci;
+f) 200 (Duzentos), todos os números começam com a letra 'D';
