@@ -9,16 +9,25 @@ IMPORTANTE:
 	b) Evite usar funções prontas, como, por exemplo, reverse; 
 */
 #include <stdio.h>
+#include <string.h>
+
 int main()
 {
-    char p[7];
-    printf("\nInsira uma palavra com até 7 letras: ");
+    char p[30], inv[30];
+    int i, j = 0;
+
+    printf("\nInsira uma palavra com até 30 letras: ");
     fflush(stdin);
-    scanf("%s", & p);
-    for (int i = 7; i >= 0; i--)
+    scanf("%s", &p);
+    for (int i = strlen(p)-1; i >= 0; i--)
     {
-        printf("\nAqui está a palavra invertida: %c\n", p[i]);
+        inv[j] = p[i];
+        j++;
     }
+    inv[j]='\0'; // finalizar o string
+
+    printf("\nPalavra: %s\n", p);
+    printf("\nInvertida: %s\n", inv);
     
     return 0;
 }
