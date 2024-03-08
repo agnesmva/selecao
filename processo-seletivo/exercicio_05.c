@@ -13,6 +13,7 @@ int main()
 {
     char p[7];
     printf("\nInsira uma palavra com até 7 letras: ");
+    fflush(stdin);
     scanf("%s", & p);
     for (int i = 7; i >= 0; i--)
     {
